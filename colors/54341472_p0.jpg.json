@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/redbishop/.config/wpg/wallpapers/54341472_p0.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0a0e",
+        "foreground": "#f0f0e8",
+        "cursor": "#f0f0e8"
+    },
+    "colors": {
+        "color0": "#0a0a0e",
+        "color1": "#9e8480",
+        "color2": "#a1969e",
+        "color3": "#d8a49c",
+        "color4": "#395285",
+        "color5": "#957288",
+        "color6": "#61698d",
+        "color7": "#ebdfcb",
+        "color8": "#1d232b",
+        "color9": "#e19e94",
+        "color10": "#e7afd7",
+        "color11": "#f1c3b3",
+        "color12": "#3e67ba",
+        "color13": "#d483b6",
+        "color14": "#707fc7",
+        "color15": "#f0f0e8"
+    }
+}

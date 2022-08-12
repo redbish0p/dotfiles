@@ -1,0 +1,21 @@
+#!/bin/sh
+
+DVTMPATH=/home/redbishop/dvtm-0.15/dvtm 
+
+FIFO="/tmp/dvtm-status.$$"
+
+[ -p "$FIFO" ] || mkfifo -m 600 "$FIFO" || exit 1
+
+while true; do
+	DATE=$(date +%H:%M)
+	POWER=$(cat /sys/class/power_supply/BAT0/capacity)
+	STATUS="BAT=[$POWER%] [$DATE]"
+	echo $STATUS > $FIFO
+	sleep 60
+done &
+
+STATUS_PID=$!
+$DVTMPATH -s "$FIFO" "$@" 2> /dev/null
+kill $STATUS_PID
+wait $STATUS_PID 2> /dev/null
+rm -f "$FIFO"
