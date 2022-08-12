@@ -19,6 +19,7 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 export EDITOR=nvim
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+#Color scheme
 if [ "$TERM" = "linux" ]; then
   /bin/echo -e "
   \e]P00a0a0e
